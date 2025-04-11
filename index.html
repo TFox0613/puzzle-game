@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>第一關</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <!-- 背景影片 -->
+    <video autoplay muted loop id="bgVideo">
+        <source src="static/coastal-moewalls-com.mp4" type="video/mp4">
+    </video>
+
+    <!-- 四角拼貼圖片 + 右下角影片 -->
+    <img src="static/1.jpg" class="corner top-left">
+    <img src="static/2.jpg" class="corner top-right">
+    <img src="static/3.jpg" class="corner bottom-left">
+    <video autoplay muted loop playsinline class="corner bottom-right-video">
+        <source src="static/4.mp4" type="video/mp4">
+    </video>
+
+    <!-- 飄動愛心 -->
+    <div id="hearts"></div>
+
+    <div class="container">
+        <h2>🧠 第一關謎題</h2>
+        <p>提示：是我們的密語 + 今年的年份</p>
+        <p id="error" style="color:red;"></p>
+        <input type="text" id="answer" placeholder="輸入你的答案">
+        <br><br>
+        <button onclick="checkAnswer()">送出</button>
+        <img src="static/5.jpg" style="position:absolute; bottom:10px; right:-50px; width:80px; transform:rotate(10deg);">
+    </div>
+
+    <script src="base.js"></script>
+</body>
+</html>
