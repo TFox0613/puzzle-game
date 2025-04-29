@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>歡迎開始挑戰</title>
+    <title>第一關</title>
     <link rel="stylesheet" href="base.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
         <source src="static/coastal-moewalls-com.mp4" type="video/mp4">
     </video>
 
-    <!-- 四角圖片 + 右下角影片 -->
+    <!-- 四角拼貼圖片 + 右下角影片 -->
     <img src="static/1.jpg" class="corner top-left">
     <img src="static/2.jpg" class="corner top-right">
     <img src="static/3.jpg" class="corner bottom-left">
@@ -22,17 +22,14 @@
     <!-- 飄動愛心 -->
     <div id="hearts"></div>
 
-    <!-- 中央文字 -->
     <div class="container">
-        <h2>🎀 親愛的禎禎 🎀</h2>
-        <p>恭喜你親愛的禎禎，沒想到你能成功解開帷幕的秘密！</p>
-        <p>I didn't expect you to successfully uncover the secret behind the curtain.</p>
-        <p>接下來留給你的將是無止境的考驗。</p>
-        <p>What lies ahead for you will be endless challenges.</p>
-        <p>Fighting, my beloved!!</p>
-        <p style="margin-top: 20px; font-weight: bold;">— 怪盜瑋瑋</p>
-
-        <a href="puzzle1.html"><button>開始挑戰！</button></a>
+        <h2>🧠 第一關謎題</h2>
+        <p>提示：是我們的密語 + 今年的年份</p>
+        <p id="error" style="color:red;"></p>
+        <input type="text" id="answer" placeholder="輸入你的答案">
+        <br><br>
+        <button onclick="checkAnswer()">送出</button>
+        <img src="static/5.jpg" style="position:absolute; bottom:10px; right:-50px; width:80px; transform:rotate(10deg);">
     </div>
 
     <script src="base.js"></script>
